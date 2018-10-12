@@ -246,9 +246,9 @@ class Commit:
         """
         Return the committed datetime.
 
-        :return: datetime committer_datetime
+        :return: datetime committer_date
         """
-        return self._c_object.committed_datetime
+        return self._c_object.committed_date
 
     @property
     def author_timezone(self) -> int:
