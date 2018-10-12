@@ -237,18 +237,18 @@ class Commit:
         """
         Return the authored datetime.
 
-        :return: datetime author_datetime
+        :return: datetime author_date
         """
-        return self._c_object.authored_datetime
+        return self._c_object.authored_date
 
     @property
     def committer_date(self) -> datetime:
         """
         Return the committed datetime.
 
-        :return: datetime committer_date
+        :return: datetime committed_datetime
         """
-        return self._c_object.committed_date
+        return self._c_object.committed_datetime
 
     @property
     def author_timezone(self) -> int:
