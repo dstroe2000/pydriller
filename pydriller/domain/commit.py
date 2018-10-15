@@ -368,7 +368,7 @@ class Commit:
             return ModificationType.ADD
         elif d.deleted_file:
             return ModificationType.DELETE
-        elif d.renamed_file:
+        elif d.renamed:
             return ModificationType.RENAME
         elif d.a_blob and d.b_blob and d.a_blob != d.b_blob:
             return ModificationType.MODIFY
